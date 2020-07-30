@@ -1,6 +1,6 @@
 {
-  "name": "tron-forge",
-  "productName": "tron-forge",
+  "name": "screen-capture-test",
+  "productName": "screen-capture-test",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
@@ -12,7 +12,10 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
-  "author": "jeffd23",
+  "author": {
+    "name": "Kyuunex",
+    "email": "kyuunex@protonmail.ch"
+  },
   "license": "MIT",
   "config": {
     "forge": {
@@ -21,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "tron_forge"
+            "name": "screen_capture_test"
           }
         },
         {
@@ -45,12 +48,11 @@
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.50",
-    "@electron-forge/maker-deb": "^6.0.0-beta.50",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.50",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.50",
-    "@electron-forge/maker-zip": "^6.0.0-beta.50",
-    "devtron": "^1.4.0",
-    "electron": "8.0.2"
+    "@electron-forge/cli": "6.0.0-beta.52",
+    "@electron-forge/maker-deb": "6.0.0-beta.52",
+    "@electron-forge/maker-rpm": "6.0.0-beta.52",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.52",
+    "@electron-forge/maker-zip": "6.0.0-beta.52",
+    "electron": "9.1.2"
   }
 }
