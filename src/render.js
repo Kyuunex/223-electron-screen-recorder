@@ -54,11 +54,16 @@ async function selectSource(source) {
   videoSelectBtn.innerText = source.name;
 
   const constraints = {
-    audio: false,
+    audio: {
+      mandatory: {
+        chromeMediaSource: 'desktop',
+        // chromeMediaSourceId: source.id
+      }
+    },
     video: {
       mandatory: {
         chromeMediaSource: 'desktop',
-        chromeMediaSourceId: source.id
+        // chromeMediaSourceId: source.id
       }
     }
   };
